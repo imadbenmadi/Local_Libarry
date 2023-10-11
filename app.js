@@ -6,10 +6,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 const mongoDB =
-    // "mongodb+srv://<username>:<password>@cluster0.qeli6hq.mongodb.net/?retryWrites=true&w=majority"
-    "mongodb://0.0.0.0:27017/local_library";
-
-    
+    "mongodb://imadbenmadi:imadimad05052004@ac-zmiisap-shard-00-00.whqh1oh.mongodb.net:27017,ac-zmiisap-shard-00-01.whqh1oh.mongodb.net:27017,ac-zmiisap-shard-00-02.whqh1oh.mongodb.net:27017/?ssl=true&replicaSet=atlas-wo97j9-shard-0&authSource=admin&retryWrites=true&w=majority"; // "mongodb://0.0.0.0:27017/local_library";
 
 main().catch((err) => console.log(err));
 async function main() {
